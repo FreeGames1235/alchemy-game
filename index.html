@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemy Game</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="images/water.png" type="image/x-icon">
+</head>
+<body>
+    <div id="game">
+        <h1>Alchemy Game</h1>
+        <div class="elements-container" id="elementsContainer">
+            <div class="element" draggable="true" data-element="fire">
+                    <img src="images/fire.png" alt="Fire">
+                    <span>fire</span>
+                </div>
+                <div class="element" draggable="true" data-element="water">
+                    <img src="images/water.png" alt="Water">
+                    <span>water</span>
+                </div>
+                <div class="element" draggable="true" data-element="earth">
+                    <img src="images/earth.png" alt="Earth">
+                    <span>earth</span>
+                </div>
+                <div class="element" draggable="true" data-element="air">
+                    <img src="images/air.png" alt="Air">
+                    <span>air</span>
+                </div>
+            </div>
+            <div class="combination-area">
+                <div class="drop-zone" id="dropZone1"></div>
+                <p id="plus">+</p>
+                <div class="drop-zone" id="dropZone2"></div>
+            </div>
+            <div class="result">
+                <h2>Result</h2>
+                <div id="resultElement"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript.js"></script>
+</body>
+</html>
